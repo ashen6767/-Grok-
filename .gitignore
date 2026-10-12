@@ -12,6 +12,7 @@ outputs/
 
 # Local visual verification artifacts
 preview*.png
+*_preview.png
 responsive*.png
 rollback*.png
 thumbnail_preview.png
@@ -19,6 +20,10 @@ browser_icon_*_preview.png
 exe_icon_preview.png
 titlebar_preview*.png
 drop_preview.png
+design/
+*_test_data*/
+package_test_data*/
+first_launch_test_*/
 
 # Editor and OS files
 .idea/
