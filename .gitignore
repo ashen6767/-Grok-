@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*.log
+.pytest_cache/
+
+# PyInstaller and release artifacts
+build*/
+dist*/
+outputs/
+*.exe
+*.zip
+
+# Local visual verification artifacts
+preview*.png
+responsive*.png
+rollback*.png
+thumbnail_preview.png
+browser_icon_*_preview.png
+exe_icon_preview.png
+titlebar_preview*.png
+drop_preview.png
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+

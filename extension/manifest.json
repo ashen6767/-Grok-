@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "老七的Grok视频助手",
+  "version": "1.2.35",
+  "version_name": "正式版1.2.35",
+  "description": "连接本机任务控制台，在已登录的 Grok Imagine 页面中批量提交视频任务。",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": ["storage", "debugger"],
+  "host_permissions": ["https://grok.com/*", "http://127.0.0.1:17843/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://grok.com/*"],
+      "js": ["ratio.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "老七的Grok视频助手",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {"service_worker": "background.js"}
+}

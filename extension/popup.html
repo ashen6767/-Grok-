@@ -1,0 +1,11 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+:root{color-scheme:light dark;--bg:#f5f8fb;--text:#173650;--muted:#667f94;--pill:#e8f0f7;--border:#cbd9e5;--code:#1769aa}
+body{width:280px;background:var(--bg);color:var(--text);font:14px system-ui;margin:0;padding:18px}.heading{display:flex;align-items:center;gap:9px;margin:0 0 10px}.heading h2{margin:0;font-size:17px}.version{color:var(--muted);background:var(--pill);border:1px solid var(--border);border-radius:999px;padding:2px 7px;font-size:11px;font-weight:600}p{color:var(--muted);line-height:1.5}.dot{color:#8a98a8}.ready .dot{color:#20b879}.running .dot{color:#2f80ed}.warning .dot{color:#d79213}.error .dot{color:#d74c5f}code{color:var(--code)}
+@media (prefers-color-scheme:dark){:root{--bg:#101319;--text:#eef5fa;--muted:#9bb0bf;--pill:#1b222b;--border:#2b3946;--code:#70cfff}}
+</style>
+<div class="heading"><h2>老七的Grok视频助手</h2><span id="version" class="version"></span></div>
+<div id="status"><span class="dot">●</span> <span id="statusText">正在检测桌面软件…</span></div>
+<p id="detail">软件关闭时助手会自动休眠，不会操作 Grok 页面。</p>
+<script src="popup.js"></script>
