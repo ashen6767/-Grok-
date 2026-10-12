@@ -24,6 +24,7 @@ design/
 *_test_data*/
 package_test_data*/
 first_launch_test_*/
+rollback_layout_test_*/
 
 # Editor and OS files
 .idea/
